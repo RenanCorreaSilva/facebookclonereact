@@ -1,0 +1,304 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.header{
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+}
+
+.headerLeft{
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+}
+
+.logo-fb svg{
+    color: #4287f5;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+.search-fb{
+    background-color: rgb(230, 230, 230);
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.search-fb svg{
+    color: gray;
+    font-size: 15px;
+}
+
+.menu-fb{
+    cursor: pointer;
+    margin-left: 25px;
+    position: relative;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.menu-fb:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+.menu-fb svg{
+    color: gray;
+    font-size: 25px;
+}
+
+.headerRight{
+    width: 50%;
+    text-align: right;
+    margin: 0 20px;
+}
+
+.plus-btn{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    line-height: 34px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.stories{
+    display: flex;
+    margin: 10px 0;
+}
+
+.storiesCard{
+    width: 24%;
+    height: 250px;
+    margin-right: 1%;
+    padding-top: 33%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.storiesCard p{
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.PostarFeed{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.PostarForm{
+    padding: 10px ;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.PostarForm img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.PostarForm input{
+    width: calc(98% - 40px);
+    height: 40px;
+    margin-left: 2%;
+    padding-left: 20px;
+    font-size: 15px;
+    background-color:rgb(240, 240, 240) ;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.PostarForm input:hover{
+    background-color: rgb(220,220,220);
+}
+
+.PostarIcons, .comentarios{
+    display: flex;
+    padding-top: 10px;
+}
+
+.IconSingle{
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    width: 33.3%;
+    padding: 5px 0;
+}
+
+.IconSingle svg{
+    vertical-align: middle;
+    font-size: 30px;
+    color: #f02849;
+}
+
+.img svg{
+    color: #45bd62;
+}
+
+
+.IconSingle:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.IconSingle span{
+    font-weight: bold;
+    color: gray;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.emoji svg{
+    color: rgb(255, 188, 4);
+}
+
+.feedPostSingle{
+    margin: 20px 0 ;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.feedPost__profile, .Postar__Profile{
+    padding: 10px;
+
+}
+
+.feedPost__profile h3, .Postar__Profile h3{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.feedPost__profile img, .Postar__Profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.feedPost__profile span{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.feedPost__Content img{
+    width: 100%;
+    display: block;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.feedPost__Content p{
+    padding: 10px 20px;
+}
+
+.ModalPostar{
+    display: none;
+    position: fixed;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    z-index: 999;
+}
+
+.formPostar{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 27px -5px rgba(0,0,0,0.75);;
+}
+
+.ModalPostar h2{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ModalPostar span{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background: rgb(201, 201, 201);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 15px;    
+    cursor: pointer;
+}
+
+.Postar__Profile {
+    text-align: left;
+}
+
+.Postar__Profile h3{
+    font-size: 15px;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    resize: none;
+}
+
+.formPostar input[type=submit]{
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4287f5;
+    color: white;
+    cursor: pointer;
+}
+
+.comentarios {
+    padding-bottom: 10px;
+}
+
+.comentarios .IconSingle svg{
+    color: gray;
+    font-size: 25px;
+}
+
+
+
+
